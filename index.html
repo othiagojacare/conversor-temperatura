@@ -10,9 +10,13 @@
     <main class="conteudo">
         <h1 class="titulo">Conversor de Temperatura</h1>
         <div class="container">
-            <input name="conv" id="temp" type="number" placeholder="Digite a temperatura em Fahrenheit">
-            <input name="conv" id="btn" type="submit" value="Converter" onclick='converte()'>
+            <input name="conv" id="temp" type="number" placeholder="Digite a temperatura">
+            <select name='select' id="temp_select">
+                <option value="Fahrenheit">Fahrenheit</option>
+                <option value="Kelvin">Kelvin</option>
+            </select>
         </div>
+        <input name="conv" id="btn" type="submit" value="Converter" onclick='converte()'>
     </main>
     <script src="script.js"></script>
 </body>
